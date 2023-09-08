@@ -124,51 +124,23 @@ function commander(cmd) {
     case "links":
       loopLines(links, "color2 margin no-animation", 0);
       break;
-    case "projects":
-      loopLines(projects, "color2 margin no-animation", 0);
-      break;
     case "email":
-      addLine('正在传送至邮箱：<a href="mailto:mail@iceyear.eu.org">mail@iceyear.eu.org</a>...', "color2", 80);
+      addLine('正在传送至邮箱：<a href="inopeth1@beeble.com">mail@0pt.im</a>...', "color2", 80);
       newTab(email);
-      break;
-    // wallet
-    case "btc":
-      loopLines(BTC, "color2 margin no-animation", 0);
-      break;
-    case "eth":
-      loopLines(ETH, "color2 margin no-animation", 0);
-      break;
-    case "xmr":
-      loopLines(XMR, "color2 margin no-animation", 0);
-      break;
-    case "feed":
-      addLine(`据说投喂鸽子🕊可以有效降低鸽子成精👻的概率！`, "inherit no-animation", 0);
-      addLine(`投喂地址如下：`, "inherit no-animation", 0);
-      loopLines(BTC, "color2 margin no-animation", 0);
-      loopLines(ETH, "color2 margin no-animation", 0);
-      loopLines(XMR, "color2 margin no-animation", 0);
       break;
     // socials
     case "github":
-      addLine("正在传送至 Ice Year 的 GitHub...", "color2", 0);
+      addLine("正在传送至 春风少年兄 的 GitHub...", "color2", 0);
       newTab(github);
       break;
     case "blog":
-      addLine("正在传送至 Ice Year 的博客...", "color2", 0);
+      addLine("正在传送至 春风少年兄 的博客...", "color2", 0);
       newTab(blog);
       break; 
     case "codeberg":
-      addLine("正在传送至 Ice Year 的 Codeberg...", "color2", 0);
+      addLine("正在传送至 春风少年兄 的 Codeberg...", "color2", 0);
       newTab(codeberg);
-      break;   
-    case "matrix":
-      addLine("正在传送至 Ice Year 的 Matrix...", "color2", 0);
-      newTab(matrix);
-      break;  
-    case "xlog":
-      addLine("正在传送至 Ice Year 的 Xlog...", "color2", 0);
-      newTab(xlog);
-      break;
+      break;    
     // functional commands
     case "gui":
       addLine("正在造轮子中...", "inherit", 0);
@@ -280,12 +252,12 @@ function commander(cmd) {
         }
         if (args == "-a") {
           addLine("IYTermial iyterm 114.51.4 KUN LOCKEY/Ice Year", "color2", 80);
-          addLine("This repo is forked from https://github.com/philippwulff/pw-term. Ice Year added Chinese Language Support and some features.", "color2", 80);
+          addLine("This repo is forked from https://github.com/philippwulff/pw-term. Ice Year added Chinese Language Support and some features.春风少年兄做了一些修改。Thanks Ice Year", "color2", 80);
           addLine("IYTerminal Source Code: https://codeberg.org/iceyear/homepage", "color2", 80);
-          addLine("If you love this repo, you could give me a star⭐ or just feed the pigeons🙃. Thanks a lot!", "color2", 80);
+          addLine("FYTerminal Source Code: https://codeberg.org/antipeth/homepage", "color2", 80);
         }
         if (args == "-s") {
-          addLine("IYTernimal", "color2", 80);
+          addLine("FYTernimal", "color2", 80);
         }
         if (args == "-n") {
           addLine("iyterm", "color2", 80);
@@ -297,7 +269,7 @@ function commander(cmd) {
           addLine("KUN", "color2", 80);
         }
         if (args == "-o") {
-          addLine("LOCKEY/Ice Year", "color2", 80);
+          addLine("Fire Yeah", "color2", 80);
         }
         if (args == "--help") {
           addLine("用法：uname [选项]...", "color2", 80);
