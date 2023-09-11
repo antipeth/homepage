@@ -1,6 +1,6 @@
-# IYTerminal 🖥
+# FY Terminal 🖥
 
-Ice Year's Homepage Source Code. Added Simplifyed Chinese language support and some interesting features.
+Fire Yeah's Homepage Source Code. Added Simplifyed Chinese language support and some interesting features.
 
 Just explore and have fun !
 

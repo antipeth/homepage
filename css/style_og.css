@@ -61,7 +61,7 @@ body {
   }
   #liner::before {
     color: #519975;
-    content: "guest@iyterm:$ ~";
+    content: "guest@fyterm:$ ~";
   }
   #liner.password::before {
     content: "Password:";

@@ -247,20 +247,20 @@ function commander(cmd) {
       break;
       case "uname":
         if (args == "") {
-          addLine("IYTernimal", "color2", 80);
+          addLine("fyTernimal", "color2", 80);
           addLine("You could type <span class=\"command\">'uname --help'</span> to see usage of this command.", "color2", 80);
         }
         if (args == "-a") {
-          addLine("IYTermial iyterm 114.51.4 KUN LOCKEY/Ice Year", "color2", 80);
+          addLine("fyTermial fyterm 114.51.4 KUN LOCKEY/Ice Year", "color2", 80);
           addLine("This repo is forked from https://github.com/philippwulff/pw-term. Ice Year added Chinese Language Support and some features.春风少年兄做了一些修改。Thanks Ice Year", "color2", 80);
-          addLine("IYTerminal Source Code: https://codeberg.org/iceyear/homepage", "color2", 80);
+          addLine("fyTerminal Source Code: https://codeberg.org/iceyear/homepage", "color2", 80);
           addLine("FYTerminal Source Code: https://codeberg.org/antipeth/homepage", "color2", 80);
         }
         if (args == "-s") {
           addLine("FYTernimal", "color2", 80);
         }
         if (args == "-n") {
-          addLine("iyterm", "color2", 80);
+          addLine("fyterm", "color2", 80);
         }
         if (args == "-r") {
           addLine("114.51.4", "color2", 80);

@@ -73,7 +73,7 @@ b {
 #liner::before {
   color: #2191FB;
   font-size: min(20px, calc(1.5vw + 7px));
-  content: "guest@iyterm:$ ~";
+  content: "guest@fyterm:$ ~";
 }
 /* #liner.password::before {
   content: "Password:";
