@@ -16,9 +16,11 @@ var current_theme = "midnight";
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 setTimeout(async function() {
+  // 选择随机的 banner
+
   //await new Promise((resolve)=>{resolve(loopLines(banner, "terminal-banner", 80));});
-  await loopLines(banner, "terminal-banner", 20);
-  loopLines(welcomeMsg, "", 80);
+  await loopLines(banners[Math.floor(Math.random() * banners.length)], "terminal-banner", 1);
+  loopLines(welcomeMsg, "", 1);
   textarea.focus();
 }, 100);
 
@@ -102,7 +104,6 @@ function enterKey(e) {
   // }
 }
 
-
 function commander(cmd) {
   var cmdAll = cmd.split(" "); 
   var cmd = cmdAll[0];
@@ -134,9 +135,13 @@ function commander(cmd) {
       newTab(github);
       break;
     case "blog":
-      addLine("正在传送至 春风少年兄 的博客...", "color2", 0);
+      addLine("正在传送至 春风少年兄 的博客...", "color2", 1);
       newTab(blog);
       break; 
+    case "oldblog":
+      addLine("正在传送至 春风少年兄 的旧博客...", "color2", 0);
+      newTab(oldblog);
+        break; 
     case "codeberg":
       addLine("正在传送至 春风少年兄 的 Codeberg...", "color2", 0);
       newTab(codeberg);
@@ -157,7 +162,9 @@ function commander(cmd) {
       }, 1);
       break;
     case "banner":
-      loopLines(banner, "terminal-banner", 20);
+      // 将以下两行代码替换掉原来的 loopLines(banner, "terminal-banner", 2);
+      loopLines(banners[Math.floor(Math.random() * banners.length)], "terminal-banner", 2);
+
       break;
     case "theme":
       var allArgs = args.split(" ");
